@@ -27,14 +27,14 @@
         extensions: ["yml"]
 
   roles:
-    #- {role: redhat_cop.controller_configuration.organizations, when: controller_organizations is defined}
-    #- {role: redhat_cop.controller_configuration.users, when: controller_user_accounts is defined}
-    #- {role: redhat_cop.controller_configuration.teams, when: controller_teams is defined}
-    #- {role: redhat_cop.controller_configuration.roles, when: controller_roles is defined}
-    #- {role: redhat_cop.controller_configuration.credentials, when: controller_credentials is defined}
-    #- {role: redhat_cop.controller_configuration.inventories, when: controller_inventories is defined}
+    - {role: redhat_cop.controller_configuration.organizations, when: controller_organizations is defined}
+    - {role: redhat_cop.controller_configuration.users, when: controller_user_accounts is defined}
+    - {role: redhat_cop.controller_configuration.teams, when: controller_teams is defined}
+    - {role: redhat_cop.controller_configuration.roles, when: controller_roles is defined}
+    - {role: redhat_cop.controller_configuration.credentials, when: controller_credentials is defined}
+    - {role: redhat_cop.controller_configuration.inventories, when: controller_inventories is defined}
     - role: inventory_scripts
-#    - {role: redhat_cop.controller_configuration.inventory_sources, when: controller_inventory_sources is defined}
-    #- {role: redhat_cop.controller_configuration.projects, when: controller_projects is defined}
-    #- {role: redhat_cop.controller_configuration.job_templates, when: controller_templates is defined}
-#    - {role: redhat_cop.controller_configuration.workflow_job_templates, when: controller_workflows is defined}
+    - {role: redhat_cop.controller_configuration.inventory_sources, when: controller_inventory_sources is defined}
+    - {role: redhat_cop.controller_configuration.projects, when: controller_projects is defined}
+    - {role: redhat_cop.controller_configuration.job_templates, when: controller_templates is defined}
+    - {role: redhat_cop.controller_configuration.workflow_job_templates, when: controller_workflows is defined}
