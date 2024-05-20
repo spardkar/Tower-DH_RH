@@ -1,6 +1,6 @@
 Tower disaster recovery:
 
-Tower disaster recovery play book is used for restoring configuration incase AWX instance is lost. The play book gets configuration from config folder for each role and execute them sequentially. 
+Tower disaster recovery play book is used for restoring configuration incase AWX instance is lost. The Ansible play book gets configuration from config folder for each role and execute them sequentially. 
 
 
 Main play book 
